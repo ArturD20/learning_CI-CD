@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from transformers import pipelines
+from transformers import pipeline
 
 app = FastAPI()
 generator = pipeline("text-generation", model="distilgpt2")
